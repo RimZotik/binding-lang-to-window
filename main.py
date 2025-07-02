@@ -8,10 +8,12 @@ def get_activate_window():
 	return None
 
 def main():
+	last_window = None
 	while True:
 		current_window = get_activate_window()
-		if current_window != None:
+		if current_window != last_window:
 			print(current_window)
+			last_window = current_window
 		time.sleep(1)
 
 if __name__ == "__main__":
