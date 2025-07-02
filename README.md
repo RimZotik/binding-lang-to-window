@@ -18,7 +18,7 @@ When switching between windows, the program automatically saves and restores the
 
 ## ⚙️ Installation
 
-1. Go to the tab [Releases](https://github.com/RimZotik/RimZotikbinding-lang-to-window/releases) and download the latest build. `*.exe`.
+1. Go to the tab [Releases](https://github.com/RimZotik/binding-lang-to-window/releases) and download the latest build. `*.exe`.
 
 2. Add the downloaded `.exe` file to the startup:
    - Press `Win + R`, type `shell:startup` and press Enter.

@@ -18,7 +18,7 @@
 
 ## ⚙️ Установка
 
-1. Перейдите на вкладку [Releases](https://github.com/yourusername/yourrepo/releases) и скачайте последнюю сборку `*.exe`.
+1. Перейдите на вкладку [Releases](https://github.com/RimZotik/binding-lang-to-window/releases) и скачайте последнюю сборку `*.exe`.
 
 2. Добавьте скачанный `.exe` файл в автозагрузку:
    - Нажмите `Win + R`, введите `shell:startup` и нажмите Enter.
