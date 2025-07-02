@@ -2,11 +2,25 @@ import win32gui
 import win32api
 import ctypes
 import win32process
+import sys
+import os
 import json
 import time
 
-with open("layouts.json", "r", encoding="utf-8") as f:
-    layouts = json.load(f)
+def load_layouts():
+    """Load layouts.json, works both from source and from PyInstaller bundle."""
+    if getattr(sys, 'frozen', False):
+        # PyInstaller bundle: layouts.The json is in the exe folder.
+        base_path = sys._MEIPASS
+    else:
+        # Starting from source
+        base_path = os.path.abspath(".")
+
+    path = os.path.join(base_path, "layouts.json")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+layouts = load_layouts()
 
 window_langs = {}
 
